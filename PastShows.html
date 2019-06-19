@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="../../xmlrpc.php" />
+<title>Past Shows &#8211; Brassneck Theatre</title>
+<meta name='robots' content='noindex,follow' />
+<link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
+<link rel='dns-prefetch' href='http://s.w.org/' />
+</style>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<link rel='stylesheet' id='theatre_wp-style-css'  href='style.css' type='text/css' media='all' />
+<style id='theatre_wp-style-inline-css' type='text/css'>
+
+			body{
+				font-family: 'Poppins';
+				font-weight: 300;
+				
+				font-size:0.875rem;
+			}
+			h1,
+			.h1{
+				font-family: 'Playfair Display';
+				font-weight: normal;
+				text-transform: none;
+				font-size: 3.09375rem;
+				letter-spacing: -0.05em;
+			}
+			@media(min-width: 768px){
+				h1,
+				.h1{
+					font-size:4.125rem;
+				}
+			}
+			h2,
+			.h2{
+				font-family: 'Playfair Display';
+				font-weight: normal;
+				text-transform: none;
+				font-size:3.25rem;
+				letter-spacing: -0.04em;
+			}
+			h3,
+			.h3{
+				font-family: 'Poppins';
+				font-weight: 300;
+				text-transform: uppercase;
+				font-size:1.75rem;
+				letter-spacing: 0.08em;
+			}
+			h4,
+			.h4{
+				font-family: 'Poppins';
+				font-weight: 300;
+				text-transform: uppercase;
+				font-size:1.25rem;
+				letter-spacing: 0.15em;
+			}
+			h5,
+			.h5{
+				font-family: 'Playfair Display';
+				font-weight: normal;
+				text-transform: capitalize;
+				font-size:1.25rem;
+				
+			}
+			h6,
+			.h6{
+				font-family: 'Playfair Display';
+				font-weight: normal;
+				text-transform: none;
+				font-size:1rem;
+			}
+			blockquote,
+			blockquote p,
+			.pullquote,
+			.blockquote,
+			.text-blockquote{
+				font-family: 'Old Standard TT';
+				font-weight: normal;font-style: italic;
+				text-transform: none;
+				font-size:1.5rem;
+			}
+			blockquote cite{
+				font-family: 'Poppins';
+			}
+			.container-main-navigation{
+				font-family: 'Poppins';
+				font-weight: 500;
+				text-transform: uppercase;
+				font-size:0.75rem;
+				letter-spacing: 0.08em;
+			}
+			h1 small, h2 small, h3 small{
+				font-family: 'Poppins';
+				font-size:0.875rem;
+			}
+
+			.font-family--h1{
+				font-family: 'Playfair Display';
+			},
+			.font-family--h2{
+				font-family: 'Playfair Display';
+			},
+			.font-family--h3{
+				font-family: 'Poppins';
+			}
+		
+			.xtd-recent-posts__post__title{
+				font-family: 'Playfair Display';
+				font-weight: normal;
+				text-transform: none;
+				font-size:1rem;
+				
+			}
+			.sub-menu a,
+			.children a{
+				font-family: 'Poppins';
+				font-weight: 300;
+			}
+			#footer .widget-title{
+				font-family: 'Poppins';
+				font-weight: 500;
+				text-transform: uppercase;
+			}
+		
+			table thead th{
+				font-family: 'Playfair Display';
+				font-weight: normal;
+				text-transform: capitalize;
+			}
+
+			.btn,
+			.wcs-more.wcs-btn--action,
+			.vc_general.vc_btn3.vc_btn3{
+				font-family: 'Poppins';
+				font-weight: 500;
+				text-transform: uppercase;
+			}
+			
+			body{
+				background-color: rgba(10,1,1,0.92);
+				color: rgba(255,255,255, 1);
+			}
+			h1, .h1{ color: rgba(255,255,255, 1) }
+			h2, .h2{ color: rgba(255,255,255, 1) }
+			h3, .h3{ color: rgba(255,255,255, 1) }
+			h4, .h4{ color: rgba(255,255,255, 1) }
+			h5, .h5{ color: rgba(255,255,255, 1) }
+			h6, .h6{ color: rgba(255,255,255, 1) }
+			a{
+				color: rgba(255,255,255, 1);
+			}
+			a:hover{
+				color: rgba(255,255,255, 0.75);
+			}
+			.container-content{
+				border-color: rgba(255,255,255, 0.15)
+			}
+			
+		
+			::-webkit-input-placeholder {
+				color: rgba(255,255,255, 0.6) !important;
+			}
+			::-moz-placeholder {
+				color: rgba(255,255,255, 0.6) !important;
+			}
+			:-ms-input-placeholder {
+				color: rgba(255,255,255, 0.6) !important;
+			}
+			:-moz-placeholder {
+				color: rgba(255,255,255, 0.6) !important;
+			}
+			::placeholder{
+				color: rgba(255,255,255, 0.6) !important;
+			}
+			pre{
+				color: rgba(255,255,255, 1)
+			}
+		
+		
+		
+		.btn-link,
+		.vc_general.vc_btn3.vc_btn3-style-btn-link{
+			color: rgba(255,255,255, 1);
+		}
+		.btn-link:hover,
+		.vc_general.vc_btn3.vc_btn3-style-btn-link:hover{
+			color: rgb(235,235,235);
+		}
+		.btn-link::after,
+		.vc_general.vc_btn3.vc_btn3-style-btn-link::after{
+			background-color: rgba(255,255,255, 1);
+			color: rgba(10,1,1,0.92);
+		}
+		.btn-link:hover::after{
+			background-color: rgb(235,235,235);
+		}
+		.btn-outline-primary,
+		.vc_general.vc_btn3.vc_btn3.vc_btn3-style-btn-outline-primary{
+			border-color: rgba(255,255,255, 1);
+			color: rgba(255,255,255, 1);
+		}
+		.btn-outline-primary:active,
+		.btn-outline-primary:hover,
+		.btn-outline-primary:hover:active,
+		.btn-outline-primary:focus,
+		.btn-outline-primary:disabled,
+		.btn-outline-primary:disabled:hover,
+		.vc_general.vc_btn3.vc_btn3.vc_btn3-style-btn-outline-primary:hover{
+			border-color: rgba(255,255,255, 1);
+			background-color: rgba(255,255,255, 1);
+			color: rgba(10,1,1,0.92);
+		}
+		.color-primary,
+		.color--primary{
+			color: rgba(255,255,255, 1);
+		}
+		.color-primary-inverted,
+		.color--primary-inverted{
+			color: rgba(0,0,0, 1);
+		}
+		.color-primary--hover{
+			color: rgb(235,235,235);
+		}
+		.color-text,
+		.vc_single_image-wrapper.container-lightbox-video,
+		.color--text{
+			color: rgba(255,255,255, 1);
+		}
+		.color-text-inverted,
+		.color--text-inverted{
+			color: rgba(0,0,0, 1)
+		}
+		.color-bg,
+		.color--bg{
+			color: rgba(10,1,1,0.92)
+		}
+		.color-bg-inverted,
+		.color--bg-inverted{
+			color: rgba(255,255,255, 1)
+		}
+		.color--h1{
+			color: rgba(255,255,255, 1)
+		}
+		.color--h2{
+			color: rgba(255,255,255, 1)
+		}
+		.color--h3{
+			color: rgba(255,255,255, 1)
+		}
+		.color--h4{
+			color: rgba(255,255,255, 1)
+		}
+		.color-bg-bg,
+		.bg-color--bg{
+			background-color: rgba(10,1,1,0.92)
+		}
+		.color-bg-bg--75,
+		.bg-color--bg-75{
+			background-color: rgba(10,1,1, 0.75)
+		}
+		.color-bg-primary,
+		.bg-color--primary{
+			background-color: rgba(255,255,255, 1)
+		}
+		.color-bg-text,
+		.bg-color--test{
+			background-color: rgba(255,255,255, 1)
+		}
+
+
+		.special-title::before{
+			border-color: rgba(255,255,255, 1)
+		},
+
+		
+			.container-header{
+				color: rgba(255,255,255, 1);
+				background-color: rgba(221,153,51, 0.95);
+			}
+			@media(min-width: 576px){
+				.container-header{
+					background-color: rgba(221,153,51,0.13);
+				}
+			}
+			.container-header__logo-nav a{
+				color: rgba(255,255,255, 1);
+			}
+			.container-header__logo-nav a:hover{
+				color: rgba(255,255,255, 0.65);
+			}
+			.container-menu--inverted .container-header__wrapper:not(.container-header__wrapper--stuck) .container-header__logo-nav ul:not(.sub-menu) > li > a,
+			.container-menu--inverted #container-main-nav__toggle-navigation{
+				color: rgba(0,0,0, 1);
+			}
+			.container-menu--inverted .container-header__wrapper:not(.container-header__wrapper--stuck) .container-header__logo-nav ul:not(.sub-menu) > li > a:hover{
+				color: rgba(0,0,0, 0.85);
+			}
+			.container-header__logo-nav .current-menu-ancestor > a,
+		  .container-header__logo-nav .current-menu-parent > a,
+		  .container-header__logo-nav .current-menu-item > a,
+		  .container-header__logo-nav .current-container-parent > a,
+		  .container-header__logo-nav .current_page_parent > a,
+		  .container-header__logo-nav .current_page_ancestor > a,
+			.container-header__logo-nav .current-container-ancestor > a,
+		  .container-header__logo-nav .current_page_item > a{
+				color: rgba(255,255,255, 1);
+			}
+
+			#container-main-nav::before{
+				background-color: rgba(221,153,51, 0.9);
+			}
+
+			.container-menu--inverted #container-main-nav::before{
+				background-color: rgba(0,0,0, 0.9);
+			}
+
+			.container-main-navigation .sub-menu,
+			.container-main-navigation .children{
+				background-color: rgba(221,153,51, 0.9)
+			}
+
+			.container-menu--inverted .container-main-navigation .sub-menu,
+			.container-menu--inverted .container-main-navigation .children{
+				background-color: rgba(0,0,0, 0.9)
+			}
+
+			.container-main-navigation .sub-menu a,
+			.container-main-navigation .children a{
+				color: rgba(255,255,255, 1)
+			}
+
+			.container-menu--inverted .container-main-navigation .sub-menu a,
+			.container-menu--inverted .container-main-navigation .children a{
+				color: rgba(0,0,0, 1)
+			}
+			.container-main-navigation .sub-menu a:hover,
+			.container-main-navigation .children a:hover{
+				color: rgba(255,255,255, 1)
+			}
+
+			.container-header__wrapper--stuck{
+				background-color: rgba(221,153,51, 0.98);
+			}
+
+			.color-primary,
+			.wpml-switcher .active,
+			#container-header__-navigator > a,
+			.section-bullets,
+			.special-title small:last-child,
+			#container-scroll-top{
+				color: rgba(255,255,255, 1);
+			}
+
+			.container-layout--without-slider .container-header__{
+				color: rgba(255,255,255, 1);
+			}
+
+			.container---without-image .container-header__::after{
+				
+			}
+			.container-header__main-heading small,
+			.container-header__main-heading span,
+			.container-header__main-heading-excerpt{
+				color: rgba(255,255,255, 1);
+			}
+
+			.container-header__main-heading-title h1{
+				color: rgba(255,255,255, 1);
+			}
+
+			.img-frame-small,
+			.img-frame-large{
+				background-color: rgba(10,1,1,0.92);
+				border-color: rgba(10,1,1,0.92);
+			}
+
+		
+			.container-footer{
+				background-color: rgba(10,0,0, 1);
+				color: rgba(167,167,167, 1);
+			}
+			.container-footer a{
+				color: rgba(255,255,255, 1);
+			}
+			.container-footer .widget-title{
+				color: rgba(255,255,255, 1);
+			}
+		
+			blockquote,
+			blockquote cite::before,
+			q,
+			q cite::before{
+				color: rgba(255,255,255, 1)
+			}
+			blockquote cite,
+			q site{
+				color: rgba(255,255,255, 1)
+			}
+			table{
+				border-color: rgba(255,255,255, 0.15);
+			}
+			table thead th{
+				color: rgba(255,255,255, 1)
+			}
+
+			.owl-nav .owl-prev::before,
+			.owl-nav .owl-next::after,
+			.owl-dots {
+				color: rgba(255,255,255, 1) !important;
+			}
+
+		
+
+			.fa-boxed{
+				background-color: rgba(255,255,255, 1);
+				color: rgba(10,1,1,0.92);
+			}
+
+
+
+
+
+
+		
+
+        .container-layout--fixed .container-fluid{
+          max-width: 1920px;
+        }
+      
+      @media(min-width: 1920px){
+        .bullets-container,
+        #container-header__-navigator{
+          display: block;
+  			}
+      }
+
+		
+			.container-header{
+				padding: 1.25rem 0 1.25rem;
+			}
+		
+      .container-header__main-heading .container-fluid{
+        flex-basis: 1920px;
+        -webkit-flex-basis: 1920px;
+        -moz-flex-basis: 1920px;
+      }
+      .container-header__main-heading-title{
+        padding-top: 1.25rem;
+        padding-bottom: 3.0625rem;
+      }
+    
+</style>
+<link rel='stylesheet' id='theatre_wp-google-fonts-css'  href='http://fonts.googleapis.com/css?family=Poppins:300,400,500%7CPlayfair+Display:400%7COld+Standard+TT:400,400italic&amp;subset=latin' type='text/css' media='all' />
+<link rel='stylesheet' id='vcv:assets:global:styles:assets-bundlesglobal-elementscss-css'  href='css/global-elements1994.css' type='text/css' media='all' />
+<link rel='https://api.w.org/' href='../wp-json/index.html' />
+
+<link rel="canonical" href="index.html" />
+<link rel='shortlink' href='../../indexe6f0.html?p=103' />
+<link rel="alternate" type="text/xml+oembed" href="../wp-json/oembed/1.0/embed31e1?url=http%3A%2F%2F192.168.0.19%2Findex.php%2Fpastshows%2F&amp;format=xml" />
+<style type="text/css" id="wp-custom-css">
+			.container-header__{
+	display:none;
+}
+
+.container-posts {
+	display:none;
+}
+header.container-header {
+	height:140px;
+}
+body-id1{
+     background-color: transparent;
+  background-image: linear-gradient(160deg, #ef9700 4%, #000000 9%);
+}
+body.container-template-default.page.container-id-103{
+     background-color: transparent;
+  background-image: linear-gradient(160deg, #ef9700 2%, #000000 7%);
+}		</style>
+	</head>
+
+<body class="container-template-default page container-id-103 vcwb vcwb-ver-2.3 container-layout--full container-layout--fixed container-layout--without-slider container---without-image container-menu--align-right container-menu--fixed  container---left container---top container---text-left container-content-without-vc elementor-default" itemscope itemtype="http://schema.org/WebPage">
+	<div class="container-site">
+		<header class="container-header">
+  <div class="container-header__wrapper">
+    <div class="container-fluid">
+      <div class="container-header__toolbar">
+  </div>
+      <div class="container-header__logo-nav">
+  <a href="../../index.html" rel="home" class="container-logo">
+              <img class="con-logo_image" src='images/logo-1.png'  alt='Brassneck Theatre'>
+  </a>
+  <label id="container-main-nav__toggle-navigation" for="container-main-nav__toggle-navigation-main">About Us <i class="ti-align-justify"></i></label>
+<div id='container-main-nav'>
+	<input type="checkbox" hidden id="container-main-nav__toggle-navigation-main">
+	<nav id="container-main-nav__wrapper">
+		<ul id="menu-about-us" class="container-main-navigation"><li id="menu-item-88" class="menu-item menu-item-type-post_type menu-item-objecontainer-page menu-item-home menu-item-has-children menu-item-88"><a href="../../index.html">About Us</a>
+<ul class="sub-menu">
+	<li id="menu-item-87" class="menu-item menu-item-type-post_type menu-item-objecontainer-page menu-item-87"><a href="../ourpatrons/index.html">Our Patrons</a></li>
+	<li id="menu-item-92" class="menu-item menu-item-type-post_type menu-item-objecontainer-page menu-item-92"><a href="../contacts/index.html">Contact Us</a></li>
+</ul>
+</li>
+<li id="menu-item-96" class="menu-item menu-item-type-post_type menu-item-objecontainer-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-96"><a href="../whatson/index.html">What&#8217;s On?</a>
+<ul class="sub-menu">
+	<li id="menu-item-110" class="menu-item menu-item-type-post_type menu-item-objecontainer-page current-menu-item page_item container-item-103 current_page_item menu-item-110"><a href="index.html">Past Shows</a></li>
+</ul>
+</li>
+<li id="menu-item-109" class="menu-item menu-item-type-post_type menu-item-objecontainer-page menu-item-109"><a href="../reviewsrewards/index.html">Reviews &#038; Awards</a></li>
+<li id="menu-item-111" class="menu-item menu-item-type-post_type menu-item-objecontainer-page menu-item-111"><a href="../youth/index.html">Youth</a></li>
+<li id="menu-item-112" class="menu-item menu-item-type-post_type menu-item-objecontainer-page menu-item-112"><a href="../brassneckery/index.html">Brassneckery</a></li>
+</ul>	</nav>
+</div>
+</div>
+    </div>
+  </div>
+</header>
+		
+  
+    <div id="container-header__" class="container-header__" data-slider="false">
+      <div class="container-header__main-heading">
+	<div class="container-fluid">
+		<div class="container-header__main-heading-title">
+			<h1>Past Shows</h1>		</div>
+	</div>
+</div>
+    </div>
+
+	  <div class="container-content">
+  <div class="container-fluid">
+
+<article id="post-103" class="container-page__entry-content post-103 page type-page status-publish hentry">
+
+	<!-- The Content -->
+			<div class="vce-row-container">
+			<div class="vce-row vce-row--col-gap-30 vce-row-columns--top vce-row-content--top" id="el-21ec2677" >
+			<div class="vce-row-content" >
+			<div class="vce-col vce-col--md-100p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first vce-col--md-last vce-col--lg-last vce-col--xl-last vce-col--md-first vce-col--lg-first vce-col--xl-first" id="el-d811c2cc">
+			<div class="vce-col-inner"  rgin  c"><div class="vce vce-separator-with-title-container vce-separator-with-title--align-center" id="el-5f31cbc6">
+			<div class="vce-separator-with-title vce-separator-with-title--color-bfc0c1 vce-separator-with-title--width-100">
+			<div class="vce-separator-with-title--line vce-separator-with-title--line--style-solid vce-separator-with-title-line--thickness-1 vce-separator-with-title--line-left">
+			</div><h3 class="vce-separator-with-title--title vce-separator-with-title--title--color-b-253-253-253">Past Shows</h3>
+			<div class="vce-separator-with-title--line vce-separator-with-title--line--style-solid vce-separator-with-title-line--thickness-1 vce-separator-with-title--line-right">
+			</div></div></div></div></div></div></div></div><div class="vce-row-container">
+			<div class="vce-row vce-row--col-gap-30 vce-row-columns--top vce-row-content--top" id="el-1db61e89">
+			<div class="vce-row-content" >
+			<div class="vce-col vce-col--md-25-61p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first vce-col--md-first vce-col--lg-first vce-col--xl-first" id="el-fb0a7e8e">
+			<div class="vce-col-inner" ><div class="vce-single-image-container vce-single-image--align-left"><div class="vce vce-single-image-wrapper" id="el-430ce079"><figure><div class="vce-single-image-inner"><img class="vce-single-image" data-width="454" data-height="641"src="images/CarlosCrismuss-454x641.jpg"  alt="" title="CarlosCrismuss"/></div></figure></div></div></div></div><div class="vce-col vce-col--md-33-58p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first" id="el-90416ff3"><div class="vce-col-inner" ><div class="vce-text-block"><div class="vce-text-block-wrapper vce" id="el-29f9cf8c"><p class="font_8"><span class="color_23">Written by:&nbsp;Stephen G Large</span></p><p class="font_8"><span class="color_23">Directed&nbsp;by:&nbsp;Tony Devlin</span></p><p class="font_8"><span class="color_23">Designed by:&nbsp;Conleth White</span></p><p class="font_8"><span class="color_23">Music by:&nbsp;Pat Gribbon</span></p><p class="font_8"><span class="color_23">Starring:&nbsp;Ciaran Bartlett, Chris Simpson, Diona Doherty, Sean Hegarty, Paddy McDonnell</span></p></div></div></div></div><div class="vce-col vce-col--md-40-79p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first vce-col--md-last vce-col--lg-last vce-col--xl-last" id="el-bf8eeae8"><div class="vce-col-inner" ><div class="vce-text-block"><div class="vce-text-block-wrapper vce" id="el-7f1edb2a"><h3 class="font_0"><span class="color_23">Carol's Crissmus</span></h3><p>‘Carol Marley is a loan shark who is feared by the local community. As she goes to bed on Christmas Eve she is visited by her dead husband Mickey Marley, who informs her that three ghosts will be paying her a wee visit&nbsp;tonight. As Carol falls into a deep sleep, chaos and hilarity ensue as the three crazy spirits show her all the misery that she has heaped upon the community. Will Carol take this second chance to make things better? Can the spirits make her see sense? Or is Carol Marley just too set in her ways to change?? Come and find out for yourselves in this hilarious re-working of Charles Dickens' classic, 'A Christmas Carol'! Bah bloody humbug’!!!</p></div></div></div></div></div></div></div><div class="vce-row-container"><div class="vce-row vce-row--col-gap-30 vce-row-columns--top vce-row-content--top" id="el-a652f6d5"><div class="vce-row-content" ><div class="vce-col vce-col--md-100p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first vce-col--md-last vce-col--lg-last vce-col--xl-last vce-col--md-first vce-col--lg-first vce-col--xl-first" id="el-190e9dc0"><div class="vce-col-inner" ><div class="vce vce-separator-container vce-separator--align-center vce-separator--style-solid" id="el-461a09b5"><div class="vce-separator vce-separator--color-bfc0c1 vce-separator--width-100 vce-separator--thickness-1"></div></div></div></div></div></div></div><div class="vce-row-container"><div class="vce-row vce-row--col-gap-30 vce-row-columns--top vce-row-content--top" id="el-1457732c"><div class="vce-row-content" ><div class="vce-col vce-col--md-25-61p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first vce-col--md-first vce-col--lg-first vce-col--xl-first" id="el-1d437cca" ><div class="vce-col-inner" ><div class="vce-single-image-container vce-single-image--align-left"><div class="vce vce-single-image-wrapper" id="el-fd437053"><figure><div class="vce-single-image-inner"><img class="vce-single-image" data-width="738" data-height="1024"src="images/Rising-738x1024.jpg"alt="" title="Rising"/></div></figure></div></div></div></div><div class="vce-col vce-col--md-33-33p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first" id="el-84f4fff2"><div class="vce-col-inner" ><div class="vce-text-block"><div class="vce-text-block-wrapper vce" id="el-f29bcca7"><p class="font_8"><span class="color_23">Directed &amp; Written by:&nbsp;Tony Devlin</span></p><p class="font_8"><span class="color_23">Designed by:&nbsp;Conleth White</span></p><p class="font_8"><span class="color_23">Music by:&nbsp;Donal O'Connor</span></p><p class="font_8"><span class="color_23">Starring:&nbsp;&nbsp;Séainín Brennan &amp;&nbsp;Tony Devlin</span></p></div></div></div></div><div class="vce-col vce-col--md-41-05p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first vce-col--md-last vce-col--lg-last vce-col--xl-last" id="el-99e77e90"><div class="vce-col-inner" ><div class="vce-text-block"><div class="vce-text-block-wrapper vce" id="el-f82450a1"><h3 class="font_0"><span class="color_23">Belfast&nbsp;Rising</span></h3><p class="font_8">‘Belfast, 1916; an industrial powerhouse at the heart of an empire. A city immersed in the revolutionary and radical politics of it’s time that would drive a number of it’s citizens to strike for their country's freedom.</p><p class="font_8">Through story, song and visuals, 'Belfast Rising' uncovers the legacy of the women and men connected with the city who would rally to their country’s cause, and strike at the heart of the British empire in pursuit of their independence’.</p><p class="font_8">This powerful new production from the multi-award-winning Brassneck Theatre Company, explores the impact that Belfast had upon the Easter Rising of 1916.</p></div></div></div></div></div></div></div><div class="vce-row-container"><div class="vce-row vce-row--col-gap-30 vce-row-columns--top vce-row-content--top" id="el-108000cb"><div class="vce-row-content" ><div class="vce-col vce-col--md-100p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first vce-col--md-last vce-col--lg-last vce-col--xl-last vce-col--md-first vce-col--lg-first vce-col--xl-first" id="el-97da8dde" data-vcy="background border el-97da8dde"><div class="vce-col-inner" ><div class="vce vce-separator-container vce-separator--align-center vce-separator--style-solid" id="el-f5700d21"><div class="vce-separator vce-separator--color-bfc0c1 vce-separator--width-100 vce-separator--thickness-1"></div></div></div></div></div></div></div><div class="vce-row-container"><div class="vce-row vce-row--col-gap-30 vce-row-columns--top vce-row-content--top" id="el-b9af88f6" ><div class="vce-row-content" ><div class="vce-col vce-col--md-26-61p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first vce-col--md-first vce-col--lg-first vce-col--xl-first" id="el-d97a1388" ><div class="vce-col-inner" ><div class="vce-single-image-container vce-single-image--align-left"><div class="vce vce-single-image-wrapper" id="el-b6783aec" data-vplyel-b6783aec"><figure><div class="vce-single-image-inner"><img class="vce-single-image" data-width="724" data-height="1024"src="images/che-724x1024.jpg" data-img-src="http://192.168.0.19/content/uploads/2018/04/che.jpg" alt="" title="che"/></div></figure></div></div></div></div><div class="vce-col vce-col--md-32-58p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first" id="el-ab025bbf"><div class="vce-col-inner" ><div class="vce-text-block"><div class="vce-text-block-wrapper vce" id="el-b0dce996"><p class="font_8"><span class="color_23">Written by:&nbsp;Conor Grimes &amp; Alan McKee</span></p><p class="font_8"><span class="color_23">Directed&nbsp;by:&nbsp;Tony Devlin</span></p><p class="font_8"><span class="color_23">Designed by:&nbsp;Conleth White</span></p><p class="font_8"><span class="color_23">Music by:&nbsp;Pat Gribbon &amp; Ryan Molloy</span></p><p class="font_8"><span class="color_23">Starring:&nbsp;&nbsp;Ryan Molloy,&nbsp;Séainín Brennan, Conor Grimes,&nbsp;Paddy Buchanon,&nbsp;Seamus O'Hara, Connlaith Pickering</span></p></div></div></div></div><div class="vce-col vce-col--md-40-79p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first vce-col--md-last vce-col--lg-last vce-col--xl-last" id="el-dc3702ee"><div class="vce-col-inner" ><div class="vce-text-block"><div class="vce-text-block-wrapper vce" id="el-e9aa472d"><h3 class="font_0"><span class="color_23">Ché Guevara's Night Off</span></h3><p class="font_8">‘A plane has been fogbound in the west of Ireland and the world's most wanted man is onboard. Ché Guevara wants only one thing… a night off. Not a bit of it! There's a cow to be calved, a dance to organise, a motorbike to repair and a bit of love in the air.</p><p class="font_8">Join Ché and the locals for a wild night's craic, with fiddles, fugitives and a drop of the black stuff.</p><p class="font_8">Starring Broadway and West End star&nbsp;Ryan Molloy (Jersey Boys) and&nbsp;from the multi-award winning Brassneck Theatre Company who brought you the smash hit shows&nbsp;'The Holy, Holy Bus', 'Man in the Moon' and 'A Night with George’!</p></div></div></div></div></div></div></div><div class="vce-row-container"><div class="vce-row vce-row--col-gap-30 vce-row-columns--top vce-row-content--top" id="el-3d459667"><div class="vce-row-content" ><div class="vce-col vce-col--md-100p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first vce-col--md-last vce-col--lg-last vce-col--xl-last vce-col--md-first vce-col--lg-first vce-col--xl-first" id="el-1f57a6e3"><div class="vce-col-inner" ><div class="vce vce-separator-container vce-separator--align-center vce-separator--style-solid" id="el-b1dd5176"><div class="vce-separator vce-separator--color-bfc0c1 vce-separator--width-100 vce-separator--thickness-1"></div></div></div></div></div></div></div><div class="vce-row-container"><div class="vce-row vce-row--col-gap-30 vce-row-columns--top vce-row-content--top" id="el-02383f51"><div class="vce-row-content" ><div class="vce-col vce-col--md-27-49p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first vce-col--md-first vce-col--lg-first vce-col--xl-first" id="el-df9e3bdb"><div class="vce-col-inner" ><div class="vce-single-image-container vce-single-image--align-left"><div class="vce vce-single-image-wrapper" id="el-b8b1deef"><figure><div class="vce-single-image-inner"><img class="vce-single-image" data-width="602" data-height="844"src="images/HolyBus-602x844.jpg" data-img-src="ima/HolyBus.jpg" alt="" title="HolyBus"/></div></figure></div></div></div></div><div class="vce-col vce-col--md-32-28p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first" id="el-afd112a8"><div class="vce-col-inner" ><div class="vce-text-block"><div class="vce-text-block-wrapper vce" id="el-06402cc2"><p class="font_8"><span class="color_23">Directed by:&nbsp;Tony Devlin</span></p><p class="font_8"><span class="color_23">Written by:&nbsp;Pearse Elliott</span></p><p class="font_8"><span class="color_23">Designed by:&nbsp;Ciaran Bagnall</span></p><p class="font_8"><span class="color_23">Starring:&nbsp;&nbsp;Stella McCusker,&nbsp;Roisin Gallagher,&nbsp;Caroline Curran, Claire Connor</span></p></div></div></div></div><div class="vce-col vce-col--md-40-21p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first vce-col--md-last vce-col--lg-last vce-col--xl-last" id="el-3f79fb4c"><div class="vce-col-inner"  ><div class="vce-text-block"><div class="vce-text-block-wrapper vce" id="el-42a51d87"><h3 class="font_0"><span class="color_23">The Holy Holy Bus</span></h3><p class="font_8">‘There is a bus&nbsp;that leaves a West Belfast parish once a year tosee the holy sites of Ireland… the locals refer to it as, 'The Holy Holy Bus'! We follow four of the female faithful on a journey of&nbsp;personal pilgrimage which by the time they have returned home, will have changed all of their lives forever.&nbsp;</p><p class="font_8">A hilariously madcap adventure about love, hope, happiness and&nbsp;faith, 'The Holy, Holy Bus' will have you laughing, crying and even praying for some divine inspiration along the way’!</p></div></div></div></div></div></div></div><div class="vce-row-container"><div class="vce-row vce-row--col-gap-30 vce-row-columns--top vce-row-content--top" id="el-5686f505"><div class="vce-row-content" ><div class="vce-col vce-col--md-100p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first vce-col--md-last vce-col--lg-last vce-col--xl-last vce-col--md-first vce-col--lg-first vce-col--xl-first" id="el-f19b3ee2" ><div class="vce-col-inner"  ><div class="vce vce-separator-container vce-separator--align-center vce-separator--style-solid" id="el-9b539a6e"><div class="vce-separator vce-separator--color-bfc0c1 vce-separator--width-100 vce-separator--thickness-1"></div></div></div></div></div></div></div><div class="vce-row-container"><div class="vce-row vce-row--col-gap-30 vce-row-columns--top vce-row-content--top" id="el-f793b6bd"><div class="vce-row-content" ><div class="vce-col vce-col--md-27-49p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first vce-col--md-first vce-col--lg-first vce-col--xl-first" id="el-10757ca1"><div class="vce-col-inner" ><div class="vce-single-image-container vce-single-image--align-left"><div class="vce vce-single-image-wrapper" id="el-db9d36c1"><figure><div class="vce-single-image-inner"><img class="vce-single-image" data-width="500" data-height="711"src="images/grimesandmckee-500x711.jpg" data-img-src="http://192.168.0.19/content/uploads/2018/04/grimesandmckee.jpeg" alt="" title="grimesandmckee"/></div></figure></div></div></div></div><div class="vce-col vce-col--md-31-7p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first" id="el-451429ca" ><div class="vce-col-inner" ><div class="vce-text-block"><div class="vce-text-block-wrapper vce" id="el-d085fe0d" ><p class="font_8"><span class="color_23">Directed by:&nbsp;Tony Devlin</span></p><p class="font_8"><span class="color_23">Written by:&nbsp;Conor Grimes &amp;&nbsp;Alan McKee</span></p><p class="font_8"><span class="color_23">Designed by:&nbsp;Brassneck</span></p><p class="font_8"><span class="color_23">Starring:&nbsp;Conor Grimes , Alan McKee, Katie Tumelty</span></p></div></div></div></div><div class="vce-col vce-col--md-40-8p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first vce-col--md-last vce-col--lg-last vce-col--xl-last" id="el-075082c3"><div class="vce-col-inner" ><div class="vce-text-block"><div class="vce-text-block-wrapper vce" id="el-2c52dbd3" <h3 class="font_0"><span class="color_23">It's a Wonderful Life... So It Is!</span></h3><p class="font_8">‘The local community have been saving all year with the Christmas club and now want their money to buy presents. However, there’s a financial crisis at the Christmas club and it’s left to the manager, Georgie Brady, to tell them that all their money’s gone.</p><p class="font_8">Not unreasonably, everybody wants to rip Georgie limb from limb and before long she finds herself wishing that she’d never been born. Luckily for Georgie, she has a guardian angel, Clarty. Unluckily for Georgie, Clarty still hasn’t earned his wings because he’s a clampet.</p><p class="font_8">Can Clarty save Georgie, can Georgie save Clarty and can the Christmas savings club save their Christmas savings, saving Christmas? Remember, every time a bell rings an angel earns his wings… or they’re calling last orders at the bar’!</p></div></div></div></div></div></div></div><div class="vce-row-container"><div class="vce-row vce-row--col-gap-30 vce-row-columns--top vce-row-content--top" id="el-96bd7684"><div class="vce-row-content" ><div class="vce-col vce-col--md-100p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first vce-col--md-last vce-col--lg-last vce-col--xl-last vce-col--md-first vce-col--lg-first vce-col--xl-first" id="el-fea7615b"><div class="vce-col-inner" ><div class="vce vce-separator-container vce-separator--align-center vce-separator--style-solid" id="el-68b0b211"><div class="vce-separator vce-separator--color-bfc0c1 vce-separator--width-100 vce-separator--thickness-1"></div></div></div></div></div></div></div><div class="vce-row-container"><div class="vce-row vce-row--col-gap-30 vce-row-columns--top vce-row-content--top" id="el-8a1da64c"><div class="vce-row-content" ><div class="vce-col vce-col--md-27-49p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first vce-col--md-first vce-col--lg-first vce-col--xl-first" id="el-b317f35a" data-vy="background border el-b317f35a"><div class="vce-col-inner" ><div class="vce-single-image-container vce-single-image--align-left"><div class="vce vce-single-image-wrapper" id="el-624b598f"><figure><div class="vce-single-image-inner"><img class="vce-single-image" data-width="405" data-height="577"src="images/LemonadeSandwich-405x577.jpg" data-img-src="http://192.168.0.19/content/uploads/2018/04/LemonadeSandwich.jpg" alt="" title="LemonadeSandwich"/></div></figure></div></div></div></div><div class="vce-col vce-col--md-30-7p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first" id="el-3e3e6211"><div class="vce-col-inner"  ="padding margin  el-3e3e6211"><div class="vce-text-block"><div class="vce-text-block-wrapper vce" id="el-f379dac4" ="all el-f379dac4"><p class="font_8"><span class="color_23">Directed by:&nbsp;Tony Devlin</span></p><p class="font_8"><span class="color_23">Written by:&nbsp;Mick Draine</span></p><p class="font_8"><span class="color_23">Designed by:&nbsp;Ciaran Bagnall</span></p><p class="font_8"><span class="color_23">Starring:&nbsp;Gerard Jordan</span></p></div></div></div></div><div class="vce-col vce-col--md-41-8p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first vce-col--md-last vce-col--lg-last vce-col--xl-last" id="el-6077e632" ="background border el-6077e632"><div class="vce-col-inner"  ="padding margin  el-6077e632"><div class="vce-text-block"><div class="vce-text-block-wrapper vce" id="el-fd1ab6a5" ="all el-fd1ab6a5"><h3 class="font_0"><span class="color_23">Lemonade Sandwich</span></h3><p class="font_8">‘In 2010, five boxers from Northern Ireland made it to the Commonwealth Games finals. Lemonade Sandwich tells the amazing true-life story of one of their trainers as he attempts to make a round-the-world trip to Delhi to watch his man fight for Gold.</p><p class="font_8">We follow his fall from grace as a successful amateur to a life of drink, drugs and violence, and then watch as he attempts to turn his life around to become the UK Body For Life Champion and a successful boxing coach’.</p></div></div></div></div></div></div></div><div class="vce-row-container"><div class="vce-row vce-row--col-gap-30 vce-row-columns--top vce-row-content--top" id="el-19f9a730" ="all el-19f9a730"><div class="vce-row-content" ><div class="vce-col vce-col--md-100p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first vce-col--md-last vce-col--lg-last vce-col--xl-last vce-col--md-first vce-col--lg-first vce-col--xl-first" id="el-7f095487" ="background border el-7f095487"><div class="vce-col-inner"  ="padding margin  el-7f095487"><div class="vce vce-separator-container vce-separator--align-center vce-separator--style-solid" id="el-4ff56ddf" ="margin el-4ff56ddf"><div class="vce-separator vce-separator--color-bfc0c1 vce-separator--width-100 vce-separator--thickness-1" ="border padding background  el-4ff56ddf"></div></div></div></div></div></div></div><div class="vce-row-container"><div class="vce-row vce-row--col-gap-30 vce-row-columns--top vce-row-content--top" id="el-613a4ce5" ="all el-613a4ce5"><div class="vce-row-content" ><div class="vce-col vce-col--md-26-61p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first vce-col--md-first vce-col--lg-first vce-col--xl-first" id="el-084f414c" ="background border el-084f414c"><div class="vce-col-inner"  ="padding margin  el-084f414c"><div class="vce-single-image-container vce-single-image--align-left"><div class="vce vce-single-image-wrapper" id="el-23d0ede2" ="all el-23d0ede2"><figure><div class="vce-single-image-inner"><img class="vce-single-image" data-width="1024" data-height="738"src="images/Man-in-the-Moon-1024x738.jpg" data-img-src="http://192.168.0.19/content/uploads/2018/04/Man-in-the-Moon.jpg" alt="" title="Man in the Moon"/></div></figure></div></div></div></div><div class="vce-col vce-col--md-31-58p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first" id="el-783198cb" ="background border el-783198cb"><div class="vce-col-inner"  ="padding margin  el-783198cb"><div class="vce-text-block"><div class="vce-text-block-wrapper vce" id="el-e532187f" ="all el-e532187f"><p class="font_8"><span class="color_23">Directed by:&nbsp;Tony Devlin</span></p><p class="font_8"><span class="color_23">Written by:&nbsp;Pearse Elliott</span></p><p class="font_8"><span class="color_23">Designed by:&nbsp;Ciaran Bagnall</span></p><p class="font_8"><span class="color_23">Starring:&nbsp;Ciaran Nolan</span></p></div></div></div></div><div class="vce-col vce-col--md-41-8p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first vce-col--md-last vce-col--lg-last vce-col--xl-last" id="el-b8cde7a1" ="background border el-b8cde7a1"><div class="vce-col-inner"  ="padding margin  el-b8cde7a1"><div class="vce-text-block"><div class="vce-text-block-wrapper vce" id="el-b69316bf" ="all el-b69316bf"><h3 class="font_0"><span class="color_23">Man In The Moon</span></h3><p class="font_8">‘A darkly comedic rollercoaster, Man In The Moon is the tender story of one man’s resolve to overcome the worst that life has to throw at him. Sean Doran has recently been fired from his dead-end job. To make matters worse, his girlfriend has left him, taken their child, and the bank has just repossessed his house.</p><p class="font_8">And so, we find him alone by the Half Moon Lake trying to fashion sense of his recent run of bad luck. Over the course of one moonlit evening Sean takes us on a soul-searching journey through life, love and death, via his past, present and future’.</p></div></div></div></div></div></div></div><div class="vce-row-container"><div class="vce-row vce-row--col-gap-30 vce-row-columns--top vce-row-content--top" id="el-28d1ff44" ="all el-28d1ff44"><div class="vce-row-content" ><div class="vce-col vce-col--md-100p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first vce-col--md-last vce-col--lg-last vce-col--xl-last vce-col--md-first vce-col--lg-first vce-col--xl-first" id="el-34ff5044" ="background border el-34ff5044"><div class="vce-col-inner"  ="padding margin  el-34ff5044"><div class="vce vce-separator-container vce-separator--align-center vce-separator--style-solid" id="el-9a056f04" ="margin el-9a056f04"><div class="vce-separator vce-separator--color-bfc0c1 vce-separator--width-100 vce-separator--thickness-1" ="border padding background  el-9a056f04"></div></div></div></div></div></div></div><div class="vce-row-container"><div class="vce-row vce-row--col-gap-30 vce-row-columns--top vce-row-content--top" id="el-0a141185" ="all el-0a141185"><div class="vce-row-content" ><div class="vce-col vce-col--md-25-61p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first vce-col--md-first vce-col--lg-first vce-col--xl-first" id="el-d04be6ba" ="background border el-d04be6ba"><div class="vce-col-inner"  ="padding margin  el-d04be6ba"><div class="vce-single-image-container vce-single-image--align-left"><div class="vce vce-single-image-wrapper" id="el-c108b2e0" ="all el-c108b2e0"><figure><div class="vce-single-image-inner"><img class="vce-single-image" data-width="777" data-height="1024"src="images/TSB-777x1024.jpg" data-img-src="http://192.168.0.19/content/uploads/2018/04/TSB.jpeg" alt="" title="TSB"/></div></figure></div></div></div></div><div class="vce-col vce-col--md-31-64p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first" id="el-d57c4d02" ="background border el-d57c4d02"><div class="vce-col-inner"  ="padding margin  el-d57c4d02"><div class="vce-text-block"><div class="vce-text-block-wrapper vce" id="el-fe601e9b" ="all el-fe601e9b"><p class="font_8"><span class="color_23">Directed by:&nbsp;Tony Devlin</span></p><p class="font_8"><span class="color_23">Written by:&nbsp;Joe Brennan &amp; Gerard Brennan&nbsp;&nbsp;</span></p><p class="font_8"><span class="color_23">Designed by:&nbsp;Ciaran Bagnall</span></p><p class="font_8"><span class="color_23">Starring:&nbsp;Marty Maguire, Katy Tumelty/Carol Moore, Gordon Fulton, Lalor Roddy, Gerard Jordan, Ciaran Nolan</span></p></div></div></div></div><div class="vce-col vce-col--md-42-74p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first vce-col--md-last vce-col--lg-last vce-col--xl-last" id="el-95d470f1" ="background border el-95d470f1"><div class="vce-col-inner"  ="padding margin  el-95d470f1"><div class="vce-text-block"><div class="vce-text-block-wrapper vce" id="el-fa9ef0d5" ="all el-fa9ef0d5"><h3 class="font_0"><span class="color_23">The Sweety Bottle</span></h3><p class="font_8">‘Belfast in the 1970s. At the rear of Brennan’s sweet shop, a popular shebeen is in full swing. This secret drinking den is an oasis where punters come to escape the troubles around them and to exorcise their own personal demons.</p><p class="font_8">Embark with us on a voyage to an era where the city and its people never ceased to find humour in even the darkest of days. An hilariously nostalgic trip down memory lane, The Sweety Bottle is sure to have you crying with laughter, as we remember everything great about Belfast during the rare auld times’.</p></div></div></div></div></div></div></div><div class="vce-row-container"><div class="vce-row vce-row--col-gap-30 vce-row-columns--top vce-row-content--top" id="el-9151174a" ="all el-9151174a"><div class="vce-row-content" ><div class="vce-col vce-col--md-100p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first vce-col--md-last vce-col--lg-last vce-col--xl-last vce-col--md-first vce-col--lg-first vce-col--xl-first" id="el-dd3c0315" ="background border el-dd3c0315"><div class="vce-col-inner"  ="padding margin  el-dd3c0315"><div class="vce vce-separator-container vce-separator--align-center vce-separator--style-solid" id="el-e1434095" ="margin el-e1434095"><div class="vce-separator vce-separator--color-bfc0c1 vce-separator--width-100 vce-separator--thickness-1" ="border padding background  el-e1434095"></div></div></div></div></div></div></div><div class="vce-row-container"><div class="vce-row vce-row--col-gap-30 vce-row-columns--top vce-row-content--top" id="el-563f1ee3" ="all el-563f1ee3"><div class="vce-row-content" ><div class="vce-col vce-col--md-25-61p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first vce-col--md-first vce-col--lg-first vce-col--xl-first" id="el-e722f9e6" ="background border el-e722f9e6"><div class="vce-col-inner"  ="padding margin  el-e722f9e6"><div class="vce-single-image-container vce-single-image--align-left"><div class="vce vce-single-image-wrapper" id="el-c5948e59" ="all el-c5948e59"><figure><div class="vce-single-image-inner"><img class="vce-single-image" data-width="261" data-height="195"src="images/BasaraBoy-261x195.jpg" data-img-src="http://192.168.0.19/content/uploads/2018/04/BasaraBoy.jpg" alt="" title="BasaraBoy"/></div></figure></div></div></div></div><div class="vce-col vce-col--md-31-64p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first" id="el-132c9aeb" ="background border el-132c9aeb"><div class="vce-col-inner"  ="padding margin  el-132c9aeb"><div class="vce-text-block"><div class="vce-text-block-wrapper vce" id="el-40002cc3" ="all el-40002cc3"><p class="font_8"><span class="color_23">Directed by:&nbsp;Tony Devlin</span></p><p class="font_8"><span class="color_23">Written by:&nbsp;Rosemary Jenkinson</span></p><p class="font_8"><span class="color_23">Designed by:&nbsp;Niall Rea</span></p><p class="font_8"><span class="color_23">Starring:&nbsp;&nbsp;John Travers</span></p></div></div></div></div><div class="vce-col vce-col--md-42-74p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first vce-col--md-last vce-col--lg-last vce-col--xl-last" id="el-7985faa3" ="background border el-7985faa3"><div class="vce-col-inner"  ="padding margin  el-7985faa3"><div class="vce-text-block"><div class="vce-text-block-wrapper vce" id="el-349877d6" ="all el-349877d6"><h3 class="font_0"><span class="color_23">BASRA BOY</span></h3><p class="font_8">‘Speedy and Stig have been best friends since their first slingshots and proudly march with the East Sons of Ulster flute band… but now Stig wants to leave Speedy’s dead-end street fights to fight in Afghanistan.</p><p class="font_8">What will become of this friendship forged in the backstreets of Belfast? In this extraordinary high-octane, roller coaster piece of theatre, we are propelled through the ups and downs of two young boys poised on the cusp of adulthood’.</p></div></div></div></div></div></div></div><div class="vce-row-container"><div class="vce-row vce-row--col-gap-30 vce-row-columns--top vce-row-content--top" id="el-c0bc41dd" ="all el-c0bc41dd"><div class="vce-row-content" ><div class="vce-col vce-col--md-100p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first vce-col--md-last vce-col--lg-last vce-col--xl-last vce-col--md-first vce-col--lg-first vce-col--xl-first" id="el-d9a93251" ="background border el-d9a93251"><div class="vce-col-inner"  ="padding margin  el-d9a93251"><div class="vce vce-separator-container vce-separator--align-center vce-separator--style-solid" id="el-56646708" ="margin el-56646708"><div class="vce-separator vce-separator--color-bfc0c1 vce-separator--width-100 vce-separator--thickness-1" ="border padding background  el-56646708"></div></div></div></div></div></div></div><div class="vce-row-container"><div class="vce-row vce-row--col-gap-30 vce-row-columns--top vce-row-content--top" id="el-823d28ef" ="all el-823d28ef"><div class="vce-row-content" ><div class="vce-col vce-col--md-25-61p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first vce-col--md-first vce-col--lg-first vce-col--xl-first" id="el-c82833fa" ="background border el-c82833fa"><div class="vce-col-inner"  ="padding margin  el-c82833fa"><div class="vce-single-image-container vce-single-image--align-left"><div class="vce vce-single-image-wrapper" id="el-87aebdd5" ="all el-87aebdd5"><figure><div class="vce-single-image-inner"><img class="vce-single-image" data-width="443" data-height="630"src="images/HungerStrike-443x630.jpg" data-img-src="http://192.168.0.19/content/uploads/2018/04/HungerStrike.jpg" alt="" title="HungerStrike"/></div></figure></div></div></div></div><div class="vce-col vce-col--md-31-64p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first" id="el-72446872" ="background border el-72446872"><div class="vce-col-inner"  ="padding margin  el-72446872"><div class="vce-text-block"><div class="vce-text-block-wrapper vce" id="el-cf3c3dd8" ="all el-cf3c3dd8"><p class="font_8"><span class="color_23">Directed, written by and starring:&nbsp;Tony Devlin</span></p><p class="font_8"><span class="color_23">Designed by:&nbsp;Sean Mac Seain &amp; Eddie Robinson</span></p></div></div></div></div><div class="vce-col vce-col--md-42-74p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first vce-col--md-last vce-col--lg-last vce-col--xl-last" id="el-148b2252" ="background border el-148b2252"><div class="vce-col-inner"  ="padding margin  el-148b2252"><div class="vce-text-block"><div class="vce-text-block-wrapper vce" id="el-cd7e1779" ="all el-cd7e1779"><h3 class="font_0"><span class="color_23">1981</span></h3><p class="font_8">‘The 1981 Hunger Strike, in which ten men gave their lives in the struggle for political status, irreversibly shaped the political developments for decades to come. In this unique piece of theatre, we are given a deep insight into the lives of each of the ten men as to who they really were.</p><p class="font_8">Through music, song, visuals and performance, this one person show takes us on an extraordinary journey, of how ten very ordinary men shook the world from their prison cells. An ultimately uplifting piece of theatre through tragedy of Shakespearean proportions, ’1981′ is the story behind the legacy of the hungerstrike. The equality that we all enjoy today… the laughter of our children. Written and Performed by Tony Devlin’.</p></div></div></div></div></div></div></div><div class="vce-row-container"><div class="vce-row vce-row--col-gap-30 vce-row-columns--top vce-row-content--top" id="el-35042be1" ="all el-35042be1"><div class="vce-row-content" ><div class="vce-col vce-col--md-100p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first vce-col--md-last vce-col--lg-last vce-col--xl-last vce-col--md-first vce-col--lg-first vce-col--xl-first" id="el-90e273c3" ="background border el-90e273c3"><div class="vce-col-inner"  ="padding margin  el-90e273c3"><div class="vce vce-separator-container vce-separator--align-center vce-separator--style-solid" id="el-6d3fb7f3" ="margin el-6d3fb7f3"><div class="vce-separator vce-separator--color-bfc0c1 vce-separator--width-100 vce-separator--thickness-1" ="border padding background  el-6d3fb7f3"></div></div></div></div></div></div></div><div class="vce-row-container"><div class="vce-row vce-row--col-gap-30 vce-row-columns--top vce-row-content--top" id="el-cf6f66a8" ="all el-cf6f66a8"><div class="vce-row-content" ><div class="vce-col vce-col--md-26-61p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first vce-col--md-first vce-col--lg-first vce-col--xl-first" id="el-26c286c5" ="background border el-26c286c5"><div class="vce-col-inner"  ="padding margin  el-26c286c5"><div class="vce-single-image-container vce-single-image--align-left"><div class="vce vce-single-image-wrapper" id="el-8230968d" ="all el-8230968d"><figure><div class="vce-single-image-inner"><img class="vce-single-image" data-width="435" data-height="611"src="images/FisfMen-435x611.jpg" data-img-src="http://192.168.0.19/content/uploads/2018/04/FisfMen.jpg" alt="" title="FisfMen"/></div></figure></div></div></div></div><div class="vce-col vce-col--md-30-64p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first" id="el-99f0cf07" ="background border el-99f0cf07"><div class="vce-col-inner"  ="padding margin  el-99f0cf07"><div class="vce-text-block"><div class="vce-text-block-wrapper vce" id="el-b8c23887" ="all el-b8c23887"><p class="font_8"><span class="color_23">Directed by:&nbsp;Tony Devlin</span></p><p class="font_8"><span class="color_23">Written by:&nbsp;Pearse Elliott</span></p><p class="font_8"><span class="color_23">Designed by:&nbsp;Stuart Marshall</span></p><p class="font_8"><span class="color_23">Starring:&nbsp;Ian Beattie, Gerard Jordan, Emma Little</span></p></div></div></div></div><div class="vce-col vce-col--md-42-74p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first vce-col--md-last vce-col--lg-last vce-col--xl-last" id="el-df157889" ="background border el-df157889"><div class="vce-col-inner"  ="padding margin  el-df157889"><div class="vce-text-block"><div class="vce-text-block-wrapper vce" id="el-c4b3ef1a" ="all el-c4b3ef1a"><h3 class="font_0"><span class="color_23">Fishers of Men</span></h3><p>‘PABLO CASSIDY has been exposed as the jewel in the British intelligence crown in their war against republicans. Exiled by these allegations, he is holed up in the middle of nowhere with his only company an African grey Parrot called Chucky. Pablo finds every sound in the wild, country night un-nerving. He is tracked to the cottage by a young female journalist, but continues to deny all the allegations. A mysterious local poacher then arrives in the middle of the night seeking help. Is this stranger an local idiot or an assassin playing a deadly game…’</p></div></div></div></div></div></div></div><div class="vce-row-container"><div class="vce-row vce-row--col-gap-30 vce-row-columns--top vce-row-content--top" id="el-48ee77d4" ="all el-48ee77d4"><div class="vce-row-content" ><div class="vce-col vce-col--md-100p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first vce-col--md-last vce-col--lg-last vce-col--xl-last vce-col--md-first vce-col--lg-first vce-col--xl-first" id="el-8d188c8c" ="background border el-8d188c8c"><div class="vce-col-inner"  ="padding margin  el-8d188c8c"><div class="vce vce-separator-container vce-separator--align-center vce-separator--style-solid" id="el-92540d70" ="margin el-92540d70"><div class="vce-separator vce-separator--color-bfc0c1 vce-separator--width-100 vce-separator--thickness-1" ="border padding background  el-92540d70"></div></div></div></div></div></div></div><div class="vce-row-container"><div class="vce-row vce-row--col-gap-30 vce-row-columns--top vce-row-content--top" id="el-c543e025" ="all el-c543e025"><div class="vce-row-content" ><div class="vce-col vce-col--md-26-61p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first vce-col--md-first vce-col--lg-first vce-col--xl-first" id="el-44f147cc" ="background border el-44f147cc"><div class="vce-col-inner"  ="padding margin  el-44f147cc"><div class="vce-single-image-container vce-single-image--align-left"><div class="vce vce-single-image-wrapper" id="el-c184c389" ="all el-c184c389"><figure><div class="vce-single-image-inner"><img class="vce-single-image" data-width="450" data-height="765"src="images/A-Night-with-George-450x765.jpg" data-img-src="http://192.168.0.19/content/uploads/2018/04/A-Night-with-George.jpg" alt="" title="A Night with George"/></div></figure></div></div></div></div><div class="vce-col vce-col--md-30-64p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first" id="el-75619738" ="background border el-75619738"><div class="vce-col-inner"  ="padding margin  el-75619738"><div class="vce-text-block"><div class="vce-text-block-wrapper vce" id="el-91179146" ="all el-91179146"><p class="font_8"><span class="color_23">Directed by:&nbsp;Tony Devlin</span></p><p class="font_8"><span class="color_23">Written by:&nbsp;Brenda Murphy</span></p><p class="font_8"><span class="color_23">Designed by:&nbsp;Niall Rea</span></p><p class="font_8"><span class="color_23">Starring:&nbsp;Donna O'Connor</span></p></div></div></div></div><div class="vce-col vce-col--md-42-74p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first vce-col--md-last vce-col--lg-last vce-col--xl-last" id="el-5a6a57eb" ="background border el-5a6a57eb"><div class="vce-col-inner"  ="padding margin  el-5a6a57eb"><div class="vce-text-block"><div class="vce-text-block-wrapper vce" id="el-ddc9f9c7" ="all el-ddc9f9c7"><h3 class="font_0"><span class="color_23">A Night with George</span></h3><p class="font_8">‘Not every woman gets to spend a night with George Clooney, but Bridie Murphy does! Let’s face it, Bridie’s life hasn’t beenall parties and premieres like George’s, but it’s a life full of drama nonetheless. Over the course of one evening, she takes George on the journey of her life. From the terrible lows to the hilarious highs,and charts the courseto her unlikely future.</p><p class="font_8">A Night With George is a new and indigenous piece ofwriting, brought to you by West Belfast’s own, Brassneck Theatre Company. With the all-important razor sharp black Belfast humour, this hilarious nightof theatre is sure to leave everyone wishing that they too could spend ‘ANight With George’!</p></div></div></div></div></div></div></div><div class="vce-row-container"><div class="vce-row vce-row--col-gap-30 vce-row-columns--top vce-row-content--top" id="el-e5f80535" ="all el-e5f80535"><div class="vce-row-content" ><div class="vce-col vce-col--md-100p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first vce-col--md-last vce-col--lg-last vce-col--xl-last vce-col--md-first vce-col--lg-first vce-col--xl-first" id="el-23ede3fc" ="background border el-23ede3fc"><div class="vce-col-inner"  ="padding margin  el-23ede3fc"><div class="vce vce-separator-container vce-separator--align-center vce-separator--style-solid" id="el-e31a3be7" ="margin el-e31a3be7"><div class="vce-separator vce-separator--color-bfc0c1 vce-separator--width-100 vce-separator--thickness-1" ="border padding background  el-e31a3be7"></div></div></div></div></div></div></div><div class="vce-row-container"><div class="vce-row vce-row--col-gap-30 vce-row-columns--top vce-row-content--top" id="el-4c7ec7f6" ="all el-4c7ec7f6"><div class="vce-row-content" ><div class="vce-col vce-col--md-26-61p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first vce-col--md-first vce-col--lg-first vce-col--xl-first" id="el-d6b8b43c" ="background border el-d6b8b43c"><div class="vce-col-inner"  ="padding margin  el-d6b8b43c"><div class="vce-single-image-container vce-single-image--align-left"><div class="vce vce-single-image-wrapper" id="el-58304713" ="all el-58304713"><figure><div class="vce-single-image-inner"><img class="vce-single-image" data-width="400" data-height="348"src="images/Flagslol-400x348.jpg" data-img-src="http://192.168.0.19/content/uploads/2018/04/Flagslol.jpg" alt="" title="Flagslol"/></div></figure></div></div></div></div><div class="vce-col vce-col--md-30-64p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first" id="el-5aac1521" ="background border el-5aac1521"><div class="vce-col-inner"  ="padding margin  el-5aac1521"><div class="vce-text-block"><div class="vce-text-block-wrapper vce" id="el-35794f24" ="all el-35794f24"><p class="font_8"><span class="color_23">Directed by:&nbsp;Conor Maguire</span></p><p class="font_8"><span class="color_23">Written by:&nbsp;Bridget O'Connor</span></p><p class="font_8"><span class="color_23">Designed by:&nbsp;Niall Rea</span></p><p class="font_8"><span class="color_23">Starring:&nbsp;Tony Devlin, Bronagh Waugh, Faolan Morgan, Joe Rea</span></p></div></div></div></div><div class="vce-col vce-col--md-42-74p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first vce-col--md-last vce-col--lg-last vce-col--xl-last" id="el-1665413e" ="background border el-1665413e"><div class="vce-col-inner"  ="padding margin  el-1665413e"><div class="vce-text-block"><div class="vce-text-block-wrapper vce" id="el-73b8842e" ="all el-73b8842e"><h3 class="font_0"><span class="color_23">The Flags</span></h3><p>‘JJ and Howie are lifeguards on the second worst beach in Ireland. They have applied for the coveted lifeguard posts at Banna Strand. It’s their dream job; eating ham salads and helping hot German girls apply their suntan oil! The trouble is JJ and Howie are not exactly good lifeguards… in fact they are feckin’ awful!! Smoking, losing the lifeguard manual, and the dead birds on the beach mean their chances are slim. Until a young woman turns up on the beach, and the boys are forced to put their dubious life-saving skills to the test for the first time. Bridget O’ Connor’s hilarious comedy about ambition, dreams and the taste of Pot Noodles begs the question: What is the real reason for The Flags’???</p></div></div></div></div></div></div></div><div class="vce-row-container"><div class="vce-row vce-row--col-gap-30 vce-row-columns--top vce-row-content--top" id="el-f18ff154" ="all el-f18ff154"><div class="vce-row-content" ><div class="vce-col vce-col--md-100p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first vce-col--md-last vce-col--lg-last vce-col--xl-last vce-col--md-first vce-col--lg-first vce-col--xl-first" id="el-1c75cbeb" ="background border el-1c75cbeb"><div class="vce-col-inner"  ="padding margin  el-1c75cbeb"><div class="vce vce-separator-container vce-separator--align-center vce-separator--style-solid" id="el-6b5de63e" ="margin el-6b5de63e"><div class="vce-separator vce-separator--color-bfc0c1 vce-separator--width-100 vce-separator--thickness-1" ="border padding background  el-6b5de63e"></div></div></div></div></div></div></div><div class="vce-row-container"><div class="vce-row vce-row--col-gap-30 vce-row-columns--top vce-row-content--top" id="el-1511b805" ="all el-1511b805"><div class="vce-row-content" ><div class="vce-col vce-col--md-57-25p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first vce-col--md-first vce-col--lg-first vce-col--xl-first" id="el-9d75f24d" ="background border el-9d75f24d"><div class="vce-col-inner"  ="padding margin  el-9d75f24d"><div class="vce-text-block"><div class="vce-text-block-wrapper vce" id="el-8e7ed8d5" ="all el-8e7ed8d5"><p class="font_8"><span class="color_23">Directed by:&nbsp;Paul Kennedy</span></p><p class="font_8"><span class="color_23">Written by:&nbsp;Eduardo Erba</span></p><p class="font_8"><span class="color_23">Designed by:&nbsp;Eddie Robinson</span></p><p class="font_8"><span class="color_23">Starring:&nbsp;Tony Devlin, Chris Simpson</span></p></div></div></div></div><div class="vce-col vce-col--md-42-75p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first vce-col--md-last vce-col--lg-last vce-col--xl-last" id="el-2b81c756" ="background border el-2b81c756"><div class="vce-col-inner"  ="padding margin  el-2b81c756"><div class="vce-text-block"><div class="vce-text-block-wrapper vce" id="el-ccde070a" ="all el-ccde070a"><h3 class="font_0"><span class="color_23">Marathon</span></h3><p>‘Night time. A country lane. While preparing for the New York marathon, two friends run into their pasts and into their futures, as they sprint through friendship, sex, God and death. This extraordinary piece of theatre where both actors run and perform without a break, is absolutley not to be missed! A beautifully simple exploration of what it means to be alive.’</p></div></div></div></div></div></div></div><div class="vce-row-container"><div class="vce-row vce-row--col-gap-30 vce-row-columns--top vce-row-content--top" id="el-513e8010" ="all el-513e8010"><div class="vce-row-content" ><div class="vce-col vce-col--md-100p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first vce-col--md-last vce-col--lg-last vce-col--xl-last vce-col--md-first vce-col--lg-first vce-col--xl-first" id="el-836c5b74" ="background border el-836c5b74"><div class="vce-col-inner"  ="padding margin  el-836c5b74"><div class="vce vce-separator-container vce-separator--align-center vce-separator--style-solid" id="el-d0a2a299" ="margin el-d0a2a299"><div class="vce-separator vce-separator--color-bfc0c1 vce-separator--width-100 vce-separator--thickness-1" ="border padding background  el-d0a2a299"></div></div></div></div></div></div></div><div class="vce-row-container"><div class="vce-row vce-row--col-gap-30 vce-row-columns--top vce-row-content--top" id="el-4d381b32" ="all el-4d381b32"><div class="vce-row-content" ><div class="vce-col vce-col--md-57-25p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first vce-col--md-first vce-col--lg-first vce-col--xl-first" id="el-de8e9f13" ="background border el-de8e9f13"><div class="vce-col-inner"  ="padding margin  el-de8e9f13"><div class="vce-text-block"><div class="vce-text-block-wrapper vce" id="el-0aa7dd26" ="all el-0aa7dd26"><p class="font_8"><span class="color_23">Directed by:&nbsp;Nick Hardin&nbsp;</span></p><p class="font_8"><span class="color_23">Written by:&nbsp;John Patrick Shanley</span></p><p class="font_8"><span class="color_23">Designed by:&nbsp;Ciaran Bagnall</span></p><p class="font_8"><span class="color_23">Starring:&nbsp;Tony Devlin, Ellen Burns</span></p></div></div></div></div><div class="vce-col vce-col--md-42-75p vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first vce-col--md-last vce-col--lg-last vce-col--xl-last" id="el-ce9adf5f" ="background border el-ce9adf5f"><div class="vce-col-inner"  ="padding margin  el-ce9adf5f"><div class="vce-text-block"><div class="vce-text-block-wrapper vce" id="el-d81e04ff" ="all el-d81e04ff"><h3 class="font_0"><span class="color_23">Danny and the Deep Blue Sea</span></h3><p>‘In a rundown bar in the Bronx, two peoples lives fatefully collide. Can they offer one another the hope of a future touched with more than the bitterness and loneliness that had been their lot before their fateful meeting? This explosive piece is a reminder of all that life can and does offer, even in the darkest moments. Today as in 1984, what could be more relevant’?</p></div></div></div></div></div></div></div><div class="vce-row-container"><div class="vce-row vce-row--col-gap-30 vce-row-columns--top vce-row-content--top" id="el-eadf5bdf" ="all el-eadf5bdf"><div class="vce-row-content" ><div class="vce-col vce-col--md-auto vce-col--xs-1 vce-col--xs-last vce-col--xs-first vce-col--sm-last vce-col--sm-first vce-col--md-last vce-col--lg-last vce-col--xl-last vce-col--md-first vce-col--lg-first vce-col--xl-first" id="el-6eec78ca" ="background border el-6eec78ca"><div class="vce-col-inner"  ="padding margin  el-6eec78ca"></div></div></div></div></div>
+</article>
+
+
+  </div></div>
+  <footer class="container-footer">
+        <div class="container-fluid">
+                </div>
+  </footer><!-- #footer -->
+</div>
+
+<script type='text/javascript' src='js/imagesloaded.min55a0.js?ver=3.2.0'></script>
+<script type='text/javascript' src='js/masonry.mind617.js?ver=3.3.2'></script>
+<script type='text/javascript' src='js/jquery/jquery.masonry.minef70.js?ver=3.1.2b'></script>
+<script type='text/javascript' src='js/jquery.waypoints.min.js'></script>
+<script type='text/javascript' src='js/sticky.min.js'></script>
+<script type='text/javascript' src='js/jquery-imagefill.js'></script>
+<script type='text/javascript' src='js/jquery.magnific-popup.min.js'></script>
+<script type='text/javascript' src='js/owl-carousel/owl.carousel.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var theatre_wp_theme_data = {"menu":{"sticky":false}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='js/scripts-min.js'></script>
+</body>
+</html>

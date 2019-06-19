@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<meta charset="UTF-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<title>Our Patrons &#8211; Brassneck Theatre</title>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<link rel='stylesheet' id='theatre_wp-style-css'  href='style.css' type='text/css' media='all' />
+<style id='theatre_wp-style-inline-css' type='text/css'>
+
+			body{
+				font-family: 'Poppins';
+				font-weight: 300;
+				
+				font-size:0.875rem;
+			}
+			h1,
+			.h1{
+				font-family: 'Playfair Display';
+				font-weight: normal;
+				text-transform: none;
+				font-size: 3.09375rem;
+				letter-spacing: -0.05em;
+			}
+			@media(min-width: 768px){
+				h1,
+				.h1{
+					font-size:4.125rem;
+				}
+			}
+			h2,
+			.h2{
+				font-family: 'Playfair Display';
+				font-weight: normal;
+				text-transform: none;
+				font-size:3.25rem;
+				letter-spacing: -0.04em;
+			}
+			h3,
+			.h3{
+				font-family: 'Poppins';
+				font-weight: 300;
+				text-transform: uppercase;
+				font-size:1.75rem;
+				letter-spacing: 0.08em;
+			}
+			h4,
+			.h4{
+				font-family: 'Poppins';
+				font-weight: 300;
+				text-transform: uppercase;
+				font-size:1.25rem;
+				letter-spacing: 0.15em;
+			}
+			h5,
+			.h5{
+				font-family: 'Playfair Display';
+				font-weight: normal;
+				text-transform: capitalize;
+				font-size:1.25rem;
+				
+			}
+			h6,
+			.h6{
+				font-family: 'Playfair Display';
+				font-weight: normal;
+				text-transform: none;
+				font-size:1rem;
+			}
+			blockquote,
+			blockquote p,
+			.pullquote,
+			.blockquote,
+			.text-blockquote{
+				font-family: 'Old Standard TT';
+				font-weight: normal;font-style: italic;
+				text-transform: none;
+				font-size:1.5rem;
+			}
+			blockquote cite{
+				font-family: 'Poppins';
+			}
+			.container-main-navigation{
+				font-family: 'Poppins';
+				font-weight: 500;
+				text-transform: uppercase;
+				font-size:0.75rem;
+				letter-spacing: 0.08em;
+			}
+			h1 small, h2 small, h3 small{
+				font-family: 'Poppins';
+				font-size:0.875rem;
+			}
+
+			.font-family--h1{
+				font-family: 'Playfair Display';
+			},
+			.font-family--h2{
+				font-family: 'Playfair Display';
+			},
+			.font-family--h3{
+				font-family: 'Poppins';
+			}
+		
+			
+			.sub-menu a,
+			.children a{
+				font-family: 'Poppins';
+				font-weight: 300;
+			}
+			#footer .widget-title{
+				font-family: 'Poppins';
+				font-weight: 500;
+				text-transform: uppercase;
+			}
+		
+			table thead th{
+				font-family: 'Playfair Display';
+				font-weight: normal;
+				text-transform: capitalize;
+			}
+
+		
+
+			body{
+				background-color: rgba(10,1,1,0.92);
+				color: rgba(255,255,255, 1);
+			}
+			h1, .h1{ color: rgba(255,255,255, 1) }
+			h2, .h2{ color: rgba(255,255,255, 1) }
+			h3, .h3{ color: rgba(255,255,255, 1) }
+			h4, .h4{ color: rgba(255,255,255, 1) }
+			h5, .h5{ color: rgba(255,255,255, 1) }
+			h6, .h6{ color: rgba(255,255,255, 1) }
+			a{
+				color: rgba(255,255,255, 1);
+			}
+			a:hover{
+				color: rgba(255,255,255, 0.75);
+			}
+			.container-content{
+				border-color: rgba(255,255,255, 0.15)
+			}
+			
+		}
+		.color-primary,
+		.color--primary{
+			color: rgba(255,255,255, 1);
+		}
+		.color-primary-inverted,
+		.color--primary-inverted{
+			color: rgba(0,0,0, 1);
+		}
+		.color-primary--hover{
+			color: rgb(235,235,235);
+		}
+		.color-text,
+		.vc_single_image-wrapper.container-lightbox-video,
+		.color--text{
+			color: rgba(255,255,255, 1);
+		}
+		.color-text-inverted,
+		.color--text-inverted{
+			color: rgba(0,0,0, 1)
+		}
+		.color-bg,
+		.color--bg{
+			color: rgba(10,1,1,0.92)
+		}
+		.color-bg-inverted,
+		.color--bg-inverted{
+			color: rgba(255,255,255, 1)
+		}
+		.color--h1{
+			color: rgba(255,255,255, 1)
+		}
+		.color--h2{
+			color: rgba(255,255,255, 1)
+		}
+		.color--h3{
+			color: rgba(255,255,255, 1)
+		}
+		.color--h4{
+			color: rgba(255,255,255, 1)
+		}
+		.color-bg-bg,
+		.bg-color--bg{
+			background-color: rgba(10,1,1,0.92)
+		}
+		.color-bg-bg--75,
+		.bg-color--bg-75{
+			background-color: rgba(10,1,1, 0.75)
+		}
+		.color-bg-primary,
+		.bg-color--primary{
+			background-color: rgba(255,255,255, 1)
+		}
+		.color-bg-text,
+		.bg-color--test{
+			background-color: rgba(255,255,255, 1)
+		}
+
+
+		.special-title::before{
+			border-color: rgba(255,255,255, 1)
+		},
+
+		
+			.container-header{
+				color: rgba(255,255,255, 1);
+				background-color: rgba(221,153,51, 0.95);
+			}
+			@media(min-width: 576px){
+				.container-header{
+					background-color: rgba(221,153,51,0.13);
+				}
+			}
+			.container-header_logo-nav a{
+				color: rgba(255,255,255, 1);
+			}
+			.container-header_logo-nav a:hover{
+				color: rgba(255,255,255, 0.65);
+			}
+			.container-menu-inverted .container-header_wrapper:not(.container-header_wrapper--stuck) .container-header_logo-nav ul:not(.sub-menu) > li > a,
+			.container-menu-inverted #container-main-nav__toggle-navigation{
+				color: rgba(0,0,0, 1);
+			}
+			.container-menu-inverted .container-header_wrapper:not(.container-header_wrapper--stuck) .container-header_logo-nav ul:not(.sub-menu) > li > a:hover{
+				color: rgba(0,0,0, 0.85);
+			}
+			.container-header_logo-nav .current-menu-ancestor > a,
+		  .container-header_logo-nav .current-menu-parent > a,
+		  .container-header_logo-nav .current-menu-item > a,
+		  .container-header_logo-nav .current-container-parent > a,
+		  .container-header_logo-nav .current_page_parent > a,
+		  .container-header_logo-nav .current_page_ancestor > a,
+			.container-header_logo-nav .current-container-ancestor > a,
+		  .container-header_logo-nav .current_page_item > a{
+				color: rgba(255,255,255, 1);
+			}
+
+			#container-main-nav::before{
+				background-color: rgba(221,153,51, 0.9);
+			}
+
+			.container-menu-inverted #container-main-nav::before{
+				background-color: rgba(0,0,0, 0.9);
+			}
+
+			.container-main-navigation .sub-menu,
+			.container-main-navigation .children{
+				background-color: rgba(221,153,51, 0.9)
+			}
+
+			.container-menu-inverted .container-main-navigation .sub-menu,
+			.container-menu-inverted .container-main-navigation .children{
+				background-color: rgba(0,0,0, 0.9)
+			}
+
+			.container-main-navigation .sub-menu a,
+			.container-main-navigation .children a{
+				color: rgba(255,255,255, 1)
+			}
+
+			.container-menu-inverted .container-main-navigation .sub-menu a,
+			.container-menu-inverted .container-main-navigation .children a{
+				color: rgba(0,0,0, 1)
+			}
+			.container-main-navigation .sub-menu a:hover,
+			.container-main-navigation .children a:hover{
+				color: rgba(255,255,255, 1)
+			}
+
+			.container-header_wrapper--stuck{
+				background-color: rgba(221,153,51, 0.98);
+			}
+
+			.color-primary,
+			.wpml-switcher .active,
+			#container-header_-navigator > a,
+			.section-bullets,
+			.special-title small:last-child,
+			#container-scroll-top{
+				color: rgba(255,255,255, 1);
+			}
+
+			.container-layout--without-slider .container-header_{
+				color: rgba(255,255,255, 1);
+			}
+
+			.container---without-image .container-header_::after{
+				
+			}
+			.container-header_main-heading small,
+			.container-header_main-heading span,
+			.container-header_main-heading-excerpt{
+				color: rgba(255,255,255, 1);
+			}
+
+			.container-header_main-heading-title h1{
+				color: rgba(255,255,255, 1);
+			}
+
+			.img-frame-small,
+			.img-frame-large{
+				background-color: rgba(10,1,1,0.92);
+				border-color: rgba(10,1,1,0.92);
+			}
+
+		
+			
+		
+			.container-footer{
+				background-color: rgba(10,0,0, 1);
+				color: rgba(167,167,167, 1);
+			}
+			.container-footer a{
+				color: rgba(255,255,255, 1);
+			}
+			.container-footer .widget-title{
+				color: rgba(255,255,255, 1);
+			}
+		
+			blockquote,
+			blockquote cite::before,
+			q,
+			q cite::before{
+				color: rgba(255,255,255, 1)
+			}
+			blockquote cite,
+			q site{
+				color: rgba(255,255,255, 1)
+			}
+			
+
+			.xtd-offset-frame::before,
+			.xtd-timeline::before{
+				border-color: rgba(255,255,255, 1)
+			}
+
+        .container-layout--fixed .container-fluid{
+          max-width: 1920px;
+        }
+      
+      @media(min-width: 1920px){
+        .bullets-container,
+        #container-header_-navigator{
+          display: block;
+  			}
+      }
+
+		
+			.container-header{
+				padding: 1.25rem 0 1.25rem;
+			}
+		
+      .container-header_main-heading .container-fluid{
+        flex-basis: 1920px;
+        -webkit-flex-basis: 1920px;
+        -moz-flex-basis: 1920px;
+      }
+      .container-header_main-heading-title{
+        padding-top: 1.25rem;
+        padding-bottom: 3.0625rem;
+      }
+    
+</style>
+<link rel='stylesheet' id='theatre_wp-google-fonts-css'  href='http://fonts.googleapis.com/css?family=Poppins:300,400,500%7CPlayfair+Display:400%7COld+Standard+TT:400,400italic&amp;subset=latin' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-icons-css'  href='icons/elementor-icons.min324d.css?ver=3.1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='fonts/font-awesome.min1849.css?ver=4.7.0' type='text/css' media='all' />
+<link rel='stylesheet' id='vcv:assets:global:styles:assets-bundlesglobal-elementscss-css'  href='css/global-elements1994.css?ver=2.3.816cdf63962a53248f117db09bc40719' type='text/css' media='all' />
+
+
+
+<link rel="canonical" href="index.html" />
+<link rel='shortlink' href='../../index44d0.html?p=81' />
+<link rel="alternate" type="application/json+oembed" href="js/embed7276.json?url=http%3A%2F%2F192.168.0.19%2Findex.php%2Fourpatrons%2F" />
+
+<style>
+			.container-header_{
+	display:none;
+}
+
+.container-posts {
+	display:none;
+}
+header.container-header {
+	height:140px;
+}
+body-id1{
+     background-color: transparent;
+  background-image: linear-gradient(160deg, #ef9700 4%, #000000 9%);
+}
+body.container-template-default.page.container-id-81{
+     background-color: transparent;
+  background-image: linear-gradient(160deg, #ef9700 2%, #000000 50%);
+}		</style>
+	</head>
+
+<body class="container-template-default page container-id-81 vcwb vcwb-ver-2.3 container-layout--full container-layout--fixed container-layout--without-slider container---without-image container-menu-align-right container-menu-fixed  container---left container---top container---text-left container-content-without-vc elementor-default elementor-page elementor-container-81">
+	<div class="container-site">
+		<header class="container-header">
+  <div class="container-header_wrapper">
+    <div class="container-fluid">
+      <div class="container-header_toolbar">
+  </div>
+      <div class="container-header_logo-nav">
+  <a href="../../index.html" rel="home" class="container-logo">
+              <img class="con-logo_image" src='images/logo-1.png'  alt='Brassneck Theatre'>
+  </a>
+  <label id="container-main-nav__toggle-navigation" for="container-main-nav__toggle-navigation-main">About Us <i class="ti-align-justify"></i></label>
+<div id='container-main-nav'>
+	<input type="checkbox" hidden id="container-main-nav__toggle-navigation-main">
+	<nav id="container-main-nav_wrapper">
+		<ul id="menu-about-us" class="container-main-navigation"><li id="menu-item-88" class="menu-item menu-item-type-post_type menu-item-objecontainer-page menu-item-home current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-88"><a href="../../index.html">About Us</a>
+<ul class="sub-menu">
+	<li id="menu-item-87" class="menu-item menu-item-type-post_type menu-item-objecontainer-page current-menu-item page_item container-item-81 current_page_item menu-item-87"><a href="index.html">Our Patrons</a></li>
+	<li id="menu-item-92" class="menu-item menu-item-type-post_type menu-item-objecontainer-page menu-item-92"><a href="../contacts/index.html">Contact Us</a></li>
+</ul>
+</li>
+<li id="menu-item-96" class="menu-item menu-item-type-post_type menu-item-objecontainer-page menu-item-has-children menu-item-96"><a href="../whatson/index.html">What&#8217;s On?</a>
+<ul class="sub-menu">
+	<li id="menu-item-110" class="menu-item menu-item-type-post_type menu-item-objecontainer-page menu-item-110"><a href="../pastshows/index.html">Past Shows</a></li>
+</ul>
+</li>
+<li id="menu-item-109" class="menu-item menu-item-type-post_type menu-item-objecontainer-page menu-item-109"><a href="../reviewsrewards/index.html">Reviews &#038; Awards</a></li>
+<li id="menu-item-111" class="menu-item menu-item-type-post_type menu-item-objecontainer-page menu-item-111"><a href="../youth/index.html">Youth</a></li>
+<li id="menu-item-112" class="menu-item menu-item-type-post_type menu-item-objecontainer-page menu-item-112"><a href="../brassneckery/index.html">Brassneckery</a></li>
+</ul>	</nav>
+</div>
+</div>
+    </div>
+  </div>
+</header>
+		
+  
+    <div id="container-header_" class="container-header_" data-slider="false">
+      <div class="container-header_main-heading">
+	<div class="container-fluid">
+		<div class="container-header_main-heading-title">
+			<h1>Our Patrons</h1>		</div>
+	</div>
+</div>
+    </div>
+
+	  <div class="container-content">
+  <div class="container-fluid">
+
+<article id="post-81" class="container-page__entry-content post-81 page type-page status-publish hentry">
+
+	<!-- The Content -->
+					<div class="elementor elementor-81">
+			<div class="elementor-inner">
+				<div class="elementor-section-wrap">
+							<section data-id="6e783f49" class="elementor-element elementor-element-6e783f49 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div data-id="1af1680c" class="elementor-element elementor-element-1af1680c elementor-column elementor-col-100 elementor-top-column" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div data-id="25a98dfa" class="elementor-element elementor-element-25a98dfa elementor-widget elementor-widget-text-editor" data-element_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><!--vcv no format--><div class="page-row-container"><div class="page-row page-row--col-gap-30 page-row-columns--top page-row-content--top" id="el-5e3db69b"><div class="page-row-content" ><div class="page-col page-col--md-50p page-col--xs-1 page-col--xs-last page-col--xs-first page-col--sm-last page-col--sm-first page-col--md-first page-col--lg-first page-col--xl-first" id="el-b8f5cac0"><div class="page-col-inner" ><div class="page-single-image-container page-single-image--align-left"><div class="vce page-single-image-wrapper" id="el-51d32f56" ><figure><div class="page-single-image-inner"><img class="page-single-image" src="images/JimSheridan.jpg" alt="" title="JimSheridan"></div></figure></div></div></div></div><div class="page-col page-col--md-50p page-col--xs-1 page-col--xs-last page-col--xs-first page-col--sm-last page-col--sm-first page-col--md-last page-col--lg-last page-col--xl-last" id="el-15d74cbc"><div class="page-content-background-container"></div><div class="page-col-inner"  ><div class="page-text-block"><div class="page-text-block-wrapper vce" id="el-4ce23374" ><h2 class="font_2">JIM SHERIDAN</h2><p class="font_8"><span class="color_21">Brassneck Theatre Company are honoured to announce Hollywood Director Jim Sheridan as our newest patron! A six-time Academy Award nominee, Jim is perhaps best known for his films&nbsp;My Left Foot, In the Name of the Father, The Field and In America. Jim has said that he is delighted to represent Brassneck Theatre Company in any capacity.</span></p><p class="font_8"><span class="color_21">Jim said,&nbsp;“Brassneck is a credit to the community that it represents. It’s focus on new writing giving local writers an opportunity to showcase their work on a national and international stage is a worthy venture. I admire that they are of the community and working for the community.&nbsp;</span></p><p class="font_8"><span class="color_21">Long may it continue. Brassneck Abu!”</span></p></div></div></div></div></div></div></div><div class="page-row-container"><div class="page-row page-row--col-gap-30 page-row-columns--top page-row-content--top" id="el-b8f828da" data-v="all el-b8f828da"><div class="page-row-content" ><div class="page-col page-col--md-50p page-col--xs-1 page-col--xs-last page-col--xs-first page-col--sm-last page-col--sm-first page-col--md-first page-col--lg-first page-col--xl-first" id="el-595a1d69"><div class="page-col-inner"  ><div class="page-single-image-container page-single-image--align-left"><div class="vce page-single-image-wrapper" id="el-62579ba7" ><figure><div class="page-single-image-inner"><img class="page-single-image" src="images/GeraldineHughes.jpg" alt="" title="GeraldineHughes"></div></figure></div></div></div></div><div class="page-col page-col--md-50p page-col--xs-1 page-col--xs-last page-col--xs-first page-col--sm-last page-col--sm-first page-col--md-last page-col--lg-last page-col--xl-last" id="el-41516347"><div class="page-col-inner"  ><div class="page-text-block"><div class="page-text-block-wrapper vce" id="el-717db924"><h2 class="font_2">GERALDINE HUGHES</h2><p class="font_8">Geraldine is an Irish film, television and stage actress. She was born in West Belfast and lived in Divis flats for a time. She won a private scholarship and attended university in America. She is best known for her portrayal of &#8216;Little Marie&#8217; in 2006′s&nbsp;Rocky Balboa, as well as starring alongside Clint Eastwood in Gran Torino! Geraldine also wrote and performed a one-woman show entitled&nbsp;Belfast Blues&nbsp;in New York City and has appeared on the hit television shows&nbsp;ER&nbsp;and&nbsp;Profiler, among others.</p><p class="font_8">Geraldine said, “I had the pleasure of seeing&nbsp;‘A Night With George’, in West Belfast. It was a privilege to sit and listen to this mighty tale which covers such a colourful array of themes and characters. Bravo to Brassneck Theatre Company!</p><p class="font_8">I am very proud to be their patron.”</p></div></div></div></div></div></div></div><div class="page-row-container"><div class="page-row page-row--col-gap-30 page-row-columns--top page-row-content--top" id="el-05c061d4"><div class="page-row-content" ></div></div></div><!--vcv no format--></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+						</div>
+			</div>
+		</div>
+			
+	<!-- Sharing -->
+	
+	<!-- Comments -->
+	
+</article>
+
+
+  </div></div>
+  <footer class="container-footer">
+        <div class="container-fluid">
+                </div>
+  </footer><!-- #footer -->
+</div>
+
+<script type='text/javascript' src='js/jquery.waypoints.min.js'></script>
+<script type='text/javascript' src='js/sticky.min.js'></script>
+<script type='text/javascript' src='js/jquery-imagefill.js'></script>
+<script type='text/javascript' src='js/jquery.magnific-popup.min.js'></script>
+<script type='text/javascript' src='js/owl.carousel.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var theatre_wp_theme_data = {"menu":{"sticky":false}};
+/* ]]> */
+</script>
+<script type='text/javascript' src= 'js/scripts-min.js'></script>
+</body>
+</html>
